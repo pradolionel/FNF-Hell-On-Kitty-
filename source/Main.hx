@@ -68,7 +68,7 @@ class Main extends Sprite
 		}
 
 		#if !debug
-		initialState = Warning;
+		initialState = TitleState;
 		#end
 	
 		ClientPrefs.loadDefaultKeys();
