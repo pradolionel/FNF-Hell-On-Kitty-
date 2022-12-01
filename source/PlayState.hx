@@ -1677,11 +1677,7 @@ class PlayState extends MusicBeatState
 
 				susLength = susLength / Conductor.stepCrochet;
 
-				if (swagNote.noteType != 'Warning Note')
-					unspawnNotes.push(swagNote);
-				else if (Warning.canAppear)
-					unspawnNotes.push(swagNote);
-
+				
 				var floorSus:Int = Math.floor(susLength);
 				if(floorSus > 0) {
 					for (susNote in 0...floorSus+1)
