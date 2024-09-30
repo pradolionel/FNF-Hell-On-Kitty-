@@ -20,12 +20,6 @@ jobs:
         with:
           ndk-version: r21e
 
-      - name: Setup Java JDK
-        uses: actions/setup-java@main
-        with:
-          distribution: 'temurin'
-          java-version: '11'
-
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2
 
@@ -45,7 +39,6 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install hscript
-          haxelib install flixel-addons
           haxelib git linc_luajit https://github.com/Sirox228/linc_luajit
           haxelib install flixel-addons 2.11.0
           haxelib list
